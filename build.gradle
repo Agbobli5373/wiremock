@@ -10,10 +10,44 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    // TestNG for test framework
+    testImplementation 'org.testng:testng:7.7.1'
+    
+    // RestAssured for API testing
+    testImplementation 'io.rest-assured:rest-assured:5.3.1'
+    testImplementation 'io.rest-assured:json-path:5.3.1'
+    testImplementation 'io.rest-assured:xml-path:5.3.1'
+    
+    // WireMock for service virtualization
+    testImplementation 'com.github.tomakehurst:wiremock-jre8:2.35.0'
+    
+    // AssertJ for fluent assertions
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+    
+    // Jackson for JSON handling
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    
+    // SLF4J and Logback for logging
+    testImplementation 'org.slf4j:slf4j-api:2.0.7'
+    testImplementation 'ch.qos.logback:logback-classic:1.4.7'
+    
+    // Apache Commons for utility functions
+    testImplementation 'org.apache.commons:commons-lang3:3.12.0'
 }
 
 test {
-    useJUnitPlatform()
+    // Use TestNG for tests
+    useTestNG() {
+        // Optionally configure TestNG
+        suites 'src/test/resources/testng.xml'
+        scanForTestClasses = true
+        parallel = 'methods'
+        threadCount = 4
+        outputDirectory = file("$buildDir/test-output")
+    }
+    
+    // Show standard output and error streams for tests
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
 }
