@@ -158,3 +158,216 @@
 16:43:15.985 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@b2f4ece{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
 16:43:15.990 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@45bf6f39{/,null,STOPPED}
 16:43:15.991 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5fcfca62{/__admin,null,STOPPED}
+17:04:21.039 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupWireMock()]. Static configuration methods can cause  unexpected behavior.
+17:04:21.091 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownWireMock()]. Static configuration methods can cause  unexpected behavior.
+17:04:21.292 [Test worker] INFO  com.amalitech.test.base.BaseTest - Starting WireMock server
+17:04:23.288 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @5747ms to org.eclipse.jetty.util.log.Slf4jLog
+17:04:23.841 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:04:23.910 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@d5d5353{/__admin,null,AVAILABLE}
+17:04:23.952 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:04:23.954 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4dba773d{/,null,AVAILABLE}
+17:04:24.014 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@4beabeec{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:04:24.016 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @6475ms
+17:04:24.017 [Test worker] INFO  com.amalitech.test.base.BaseTest - WireMock server started on port: 8080
+17:04:25.334 [Test worker] INFO  com.amalitech.test.base.BaseTest - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:04:25.404 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:04:25.405 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using WireMock port: 8080, RestAssured port: 8080
+17:04:25.914 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:04:25.915 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using WireMock port: 8080, RestAssured port: 8080
+17:04:25.917 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - SampleApiTest setup method - resetting WireMock
+17:04:25.918 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - WireMock port: 8080, RestAssured port: 8080
+17:04:25.937 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+17:04:25.953 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+17:04:25.954 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+17:04:25.955 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+17:04:26.402 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+17:04:41.942 [qtp1988664928-38] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:04:42.069 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:04:42.138 [Test worker] INFO  com.amalitech.test.base.BaseTest - Stopping WireMock server
+17:04:42.368 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@4beabeec{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:04:42.382 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4dba773d{/,null,STOPPED}
+17:04:42.386 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@d5d5353{/__admin,null,STOPPED}
+17:05:22.395 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupWireMock()]. Static configuration methods can cause  unexpected behavior.
+17:05:22.426 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownWireMock()]. Static configuration methods can cause  unexpected behavior.
+17:05:22.594 [Test worker] INFO  com.amalitech.test.base.BaseTest - Starting WireMock server
+17:05:26.360 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @13105ms to org.eclipse.jetty.util.log.Slf4jLog
+17:05:26.975 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:05:27.061 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1716e8c5{/__admin,null,AVAILABLE}
+17:05:27.124 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:05:27.126 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6f94fb9d{/,null,AVAILABLE}
+17:05:27.191 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@704641e3{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:05:27.192 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @13963ms
+17:05:27.193 [Test worker] INFO  com.amalitech.test.base.BaseTest - WireMock server started on port: 8080
+17:05:28.674 [Test worker] INFO  com.amalitech.test.base.BaseTest - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:05:28.755 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:05:28.756 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using WireMock port: 8080, RestAssured port: 8080
+17:05:29.314 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:05:29.314 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using WireMock port: 8080, RestAssured port: 8080
+17:05:29.317 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - SampleApiTest setup method - resetting WireMock
+17:05:29.318 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - WireMock port: 8080, RestAssured port: 8080
+17:05:29.335 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+17:05:29.350 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+17:05:29.352 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+17:05:29.353 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+17:05:29.707 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+17:05:34.964 [qtp1037572328-39] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:05:35.034 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:05:35.050 [Test worker] INFO  com.amalitech.test.base.BaseTest - Stopping WireMock server
+17:05:35.064 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@704641e3{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:05:35.067 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6f94fb9d{/,null,STOPPED}
+17:05:35.069 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1716e8c5{/__admin,null,STOPPED}
+17:14:45.495 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:14:45.536 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:14:45.733 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+17:14:49.472 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @16904ms to org.eclipse.jetty.util.log.Slf4jLog
+17:14:50.169 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:14:50.302 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@102c577f{/__admin,null,AVAILABLE}
+17:14:50.354 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:14:50.356 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@50fb33a{/,null,AVAILABLE}
+17:14:50.445 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@17690e14{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:14:50.447 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @17879ms
+17:14:50.449 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+17:14:52.491 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:14:52.668 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:14:53.350 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:14:53.408 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:14:53.409 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:14:53.414 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:14:53.426 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+17:14:53.439 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+17:14:53.463 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+17:14:53.465 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+17:14:53.466 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+17:14:54.229 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+17:15:17.525 [qtp8268900-38] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:15:17.667 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:15:17.669 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:15:17.704 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+17:15:17.708 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+17:15:17.759 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@17690e14{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:15:17.777 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@50fb33a{/,null,STOPPED}
+17:15:17.783 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@102c577f{/__admin,null,STOPPED}
+17:18:27.619 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:18:27.757 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:18:27.986 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+17:18:31.339 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @11068ms to org.eclipse.jetty.util.log.Slf4jLog
+17:18:31.802 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:18:31.887 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2f897dab{/__admin,null,AVAILABLE}
+17:18:31.930 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:18:31.933 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@58ba5b30{/,null,AVAILABLE}
+17:18:32.017 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@3fe46690{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:18:32.020 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @11748ms
+17:18:32.022 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+17:18:34.965 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:18:35.094 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:18:35.544 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:18:35.593 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:18:35.595 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:18:35.596 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:18:35.613 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+17:18:35.623 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+17:18:35.641 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+17:18:35.643 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+17:18:35.644 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+17:18:36.349 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+17:18:43.812 [qtp538132628-38] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:18:43.915 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:18:43.917 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:18:43.939 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+17:18:43.940 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+17:18:43.960 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@3fe46690{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:18:43.965 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@58ba5b30{/,null,STOPPED}
+17:18:43.966 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2f897dab{/__admin,null,STOPPED}
+17:19:54.621 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:19:54.680 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:19:54.930 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+17:19:59.519 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @13759ms to org.eclipse.jetty.util.log.Slf4jLog
+17:20:00.492 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:20:00.637 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@25aeb5ac{/__admin,null,AVAILABLE}
+17:20:00.729 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:20:00.733 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@315f09ef{/,null,AVAILABLE}
+17:20:00.847 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@109a2025{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:20:00.849 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @15089ms
+17:20:00.855 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+17:20:03.308 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:20:03.484 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:20:04.308 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:20:04.381 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:20:04.383 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:20:04.384 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:20:04.407 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+17:20:04.422 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+17:20:04.445 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+17:20:04.447 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+17:20:04.448 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+17:20:05.181 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+17:20:13.622 [qtp1891673045-40] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:20:13.755 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:20:13.760 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:20:13.791 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+17:20:13.792 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+17:20:13.819 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@109a2025{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:20:13.824 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@315f09ef{/,null,STOPPED}
+17:20:13.827 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@25aeb5ac{/__admin,null,STOPPED}
+17:20:36.887 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:20:36.927 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:20:37.119 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+17:20:43.421 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @15146ms to org.eclipse.jetty.util.log.Slf4jLog
+17:20:44.215 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:20:44.503 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1859e2a4{/__admin,null,AVAILABLE}
+17:20:44.593 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:20:44.602 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2f84acf7{/,null,AVAILABLE}
+17:20:44.716 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@4d3ca6c7{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:20:44.717 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @16442ms
+17:20:44.721 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+17:20:49.346 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:20:49.657 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:20:50.014 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:20:50.044 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:20:50.047 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:20:50.048 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:20:50.057 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+17:20:50.065 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+17:20:50.080 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+17:20:50.083 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+17:20:50.083 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+17:20:50.642 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+17:20:58.243 [qtp366752671-43] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:20:58.314 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:20:58.316 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:20:58.336 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+17:20:58.337 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+17:20:58.355 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@4d3ca6c7{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:20:58.358 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2f84acf7{/,null,STOPPED}
+17:20:58.360 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1859e2a4{/__admin,null,STOPPED}
+17:21:10.248 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:21:10.281 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:21:10.425 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+17:21:16.679 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @12432ms to org.eclipse.jetty.util.log.Slf4jLog
+17:21:17.542 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:21:17.654 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@25aeb5ac{/__admin,null,AVAILABLE}
+17:21:17.717 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:21:17.723 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@315f09ef{/,null,AVAILABLE}
+17:21:17.807 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@109a2025{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:21:17.809 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @13714ms
+17:21:17.811 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+17:21:20.224 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:21:20.499 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:21:22.407 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:21:22.458 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:21:22.460 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:21:22.462 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:21:22.475 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+17:21:22.484 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+17:21:22.503 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+17:21:22.504 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+17:21:22.507 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+17:21:24.161 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+17:21:33.817 [qtp1891673045-39] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:21:33.953 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:21:33.955 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:21:33.992 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+17:21:33.993 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+17:21:34.016 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@109a2025{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:21:34.023 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@315f09ef{/,null,STOPPED}
+17:21:34.025 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@25aeb5ac{/__admin,null,STOPPED}

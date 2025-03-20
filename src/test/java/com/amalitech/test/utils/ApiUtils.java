@@ -1,6 +1,6 @@
 package com.amalitech.test.utils;
 
-import io.restassured.RestAssured;
+import com.amalitech.test.config.TestConfig;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.slf4j.Logger;
@@ -15,10 +15,8 @@ public class ApiUtils {
      * Perform a GET request
      */
     public static Response performGetRequest(RequestSpecification requestSpec, String endpoint) {
-        int port =  RestAssured.port;
-        String baseUri = RestAssured.baseURI;
-        log.info("Performing GET request to: {} (port: {}, baseUri: {})",
-                endpoint, port, baseUri);
+        String baseUrl = TestConfig.getBaseUrl();
+        log.info("Performing GET request to: {} (baseUri: {})", endpoint, baseUrl);
 
         RequestSpecification spec = given();
 
@@ -26,15 +24,9 @@ public class ApiUtils {
             spec = spec.spec(requestSpec);
         }
 
-        // Always explicitly set the port to avoid any defaults
-        spec = spec.port(port);
-
         try {
             // Log the full URL being used
-            log.info("Full request URL: {}{}{}",
-                    baseUri,
-                    port > 0 ? ":" + port : "",
-                    endpoint);
+            log.info("Full request URL: {}{}", baseUrl, endpoint);
 
             return spec
                     .when()
@@ -52,10 +44,8 @@ public class ApiUtils {
      * Perform a POST request with a JSON body
      */
     public static Response performPostRequest(RequestSpecification requestSpec, String endpoint, Object bodyPayload) {
-        int port = RestAssured.port;
-        String baseUri = RestAssured.baseURI;
-        log.info("Performing POST request to: {} (port: {}, baseUri: {})",
-                endpoint, port, baseUri);
+        String baseUri = TestConfig.getBaseUrl();
+        log.info("Performing POST request to: {} (baseUri: {})", endpoint, baseUri);
 
         RequestSpecification spec = given();
 
@@ -63,15 +53,9 @@ public class ApiUtils {
             spec = spec.spec(requestSpec);
         }
 
-        // Always explicitly set the port to avoid any defaults
-        spec = spec.port(port);
-
         try {
             // Log the full URL being used
-            log.info("Full request URL: {}{}{}",
-                    baseUri,
-                    port > 0 ? ":" + port : "",
-                    endpoint);
+            log.info("Full request URL: {}{}", baseUri, endpoint);
 
             return spec.body(bodyPayload)
                     .when()
@@ -89,10 +73,8 @@ public class ApiUtils {
      * Perform a PUT request with a JSON body
      */
     public static Response performPutRequest(RequestSpecification requestSpec, String endpoint, Object bodyPayload) {
-        int port =  RestAssured.port;
-        String baseUri = RestAssured.baseURI;
-        log.info("Performing PUT request to: {} (port: {}, baseUri: {})",
-                endpoint, port, baseUri);
+        String baseUri = TestConfig.getBaseUrl();
+        log.info("Performing PUT request to: {} (baseUri: {})", endpoint, baseUri);
 
         RequestSpecification spec = given();
 
@@ -100,15 +82,9 @@ public class ApiUtils {
             spec = spec.spec(requestSpec);
         }
 
-        // Always explicitly set the port to avoid any defaults
-        spec = spec.port(port);
-
         try {
             // Log the full URL being used
-            log.info("Full request URL: {}{}{}",
-                    baseUri,
-                    port > 0 ? ":" + port : "",
-                    endpoint);
+            log.info("Full request URL: {}{}", baseUri, endpoint);
 
             return spec.body(bodyPayload)
                     .when()
@@ -126,10 +102,8 @@ public class ApiUtils {
      * Perform a DELETE request
      */
     public static Response performDeleteRequest(RequestSpecification requestSpec, String endpoint) {
-        int port = RestAssured.port;
-        String baseUri =  RestAssured.baseURI;
-        log.info("Performing DELETE request to: {} (port: {}, baseUri: {})",
-                endpoint, port, baseUri);
+        String baseUri = TestConfig.getBaseUrl();
+        log.info("Performing DELETE request to: {} (baseUri: {})", endpoint, baseUri);
 
         RequestSpecification spec = given();
 
@@ -137,15 +111,9 @@ public class ApiUtils {
             spec = spec.spec(requestSpec);
         }
 
-        // Always explicitly set the port to avoid any defaults
-        spec = spec.port(port);
-
         try {
             // Log the full URL being used
-            log.info("Full request URL: {}{}{}",
-                    baseUri,
-                    port > 0 ? ":" + port : "",
-                    endpoint);
+            log.info("Full request URL: {}{}", baseUri, endpoint);
 
             return spec
                     .when()

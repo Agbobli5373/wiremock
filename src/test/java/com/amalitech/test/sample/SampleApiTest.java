@@ -2,7 +2,7 @@ package com.amalitech.test.sample;
 
 import com.amalitech.test.base.BaseTest;
 import com.amalitech.test.utils.ApiUtils;
-import io.restassured.RestAssured;
+import com.github.tomakehurst.wiremock.WireMockServer;
 import io.restassured.response.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,18 +15,34 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class SampleApiTest extends BaseTest {
     private static final Logger log = LoggerFactory.getLogger(SampleApiTest.class);
+    private WireMockServer wireMockServer;
 
     @BeforeMethod
     @Override
     public void setupMethod() {
         super.setupMethod(); // Call parent setup first
-        log.info("SampleApiTest setup method - resetting WireMock");
-        log.info("WireMock port: {}, RestAssured port: {}", wireMockServer.port(), RestAssured.port);
-        wireMockServer.resetAll();
+
+        // Get WireMock server instance if using mock server
+        wireMockServer = getWireMockServer();
+        if (wireMockServer != null) {
+            log.info("Using WireMock server on port: {}", wireMockServer.port());
+        } else {
+            log.info("Using real server, WireMock not available");
+        }
+
+        // Example of how to switch to real server for specific tests
+        // Uncomment the line below to use a real server
+        // useRealServer("http://real-server-url");
     }
 
     @Test
     public void testSuccessfulGetRequest() {
+        // Skip test if not using mock server
+        if (wireMockServer == null) {
+            log.info("Skipping mock-based test as we're using a real server");
+            return;
+        }
+
         // Arrange
         String endpoint = "/api/users/1";
         String responseBody = "{ \"id\": 1, \"name\": \"John Doe\", \"email\": \"john@example.com\" }";
@@ -35,8 +51,7 @@ public class SampleApiTest extends BaseTest {
         log.info("Stubbed GET request to {} with 200 response", endpoint);
 
         // Act
-        log.info("Sending request to port: {}", requestSpec);
-
+        log.info("Sending request to endpoint: {}", endpoint);
         Response response = ApiUtils.performGetRequest(requestSpec, endpoint);
 
         // Assert

@@ -1,12 +1,10 @@
 package com.amalitech.test.base;
 
+import com.amalitech.test.config.TestConfig;
+import com.amalitech.test.server.ServerFactory;
+import com.amalitech.test.server.ServerFactoryProvider;
+import com.amalitech.test.server.WireMockServerFactory;
 import com.github.tomakehurst.wiremock.WireMockServer;
-import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
-import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.filter.log.RequestLoggingFilter;
-import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.slf4j.Logger;
@@ -17,46 +15,26 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeMethod;
 
-import static io.restassured.config.EncoderConfig.encoderConfig;
-import static io.restassured.config.RestAssuredConfig.config;
-
 public abstract class BaseTest {
     private static final Logger log = LoggerFactory.getLogger(BaseTest.class);
-    protected static WireMockServer wireMockServer;
+    protected static ServerFactory serverFactory;
     protected RequestSpecification requestSpec;
     protected ResponseSpecification responseSpec;
 
-    @BeforeSuite
-    public static void setupWireMock() {
-        log.info("Starting WireMock server");
-
-        try {
-            wireMockServer = new WireMockServer(WireMockConfiguration.options().port(8080));
-            wireMockServer.start();
-        } catch (Exception e) {
-            log.warn("Could not start WireMock on port 8089, using random port", e);
-            wireMockServer = new WireMockServer(WireMockConfiguration.options().dynamicPort());
-            wireMockServer.start();
+    // Convenience method to get WireMock server if using mock server
+    protected WireMockServer getWireMockServer() {
+        if (serverFactory instanceof WireMockServerFactory) {
+            return ((WireMockServerFactory) serverFactory).getWireMockServer();
         }
+        return null;
+    }
 
-        int port = wireMockServer.port();
-        log.info("WireMock server started on port: {}", port);
-
-        // Configure RestAssured global settings - VERY IMPORTANT to prevent connection
-        RestAssured.reset(); // Reset any existing configuration
-        RestAssured.baseURI = "http://localhost";
-        RestAssured.port = port;
-        RestAssured.basePath = "";
-
-        // Set urlEncodingEnabled to false to prevent URL encoding issues
-        RestAssured.urlEncodingEnabled = false;
-
-        // Ensure this is logged
-        log.info("RestAssured configured with baseURI: {}, port: {}, basePath: '{}'",
-                RestAssured.baseURI, RestAssured.port, RestAssured.basePath);
-
-        RestAssured.config = config()
-                .encoderConfig(encoderConfig().defaultContentCharset("UTF-8"));
+    @BeforeSuite
+    public static void setupServerFactory() {
+        // By default, use mock server - can be changed by test configurations
+        serverFactory = ServerFactoryProvider.getMockServerFactory();
+        serverFactory.initialize();
+        TestConfig.setBaseUrl(serverFactory.baseUrl());
     }
 
     @BeforeClass
@@ -69,48 +47,64 @@ public abstract class BaseTest {
     public void setupMethod() {
         log.info("Base test method setup");
         initializeSpecifications();
+
+        // Reset mock server if applicable
+        if (serverFactory.isMockServer()) {
+            serverFactory.reset();
+        }
     }
 
     private void initializeSpecifications() {
-        if (wireMockServer == null || !wireMockServer.isRunning()) {
-            setupWireMock();
+        // Create request specification from server factory
+        requestSpec = serverFactory.createRequestSpec();
+        log.info("Using server at: {}", serverFactory.baseUrl());
+    }
+
+    /**
+     * Switch to a real server for tests
+     * 
+     * @param realServerUrl URL of the real server
+     */
+    public static void useRealServer(String realServerUrl) {
+        // Clean up existing factory if needed
+        if (serverFactory != null) {
+            serverFactory.shutdown();
         }
 
-        int port = wireMockServer.port();
-        // Update RestAssured port just to make sure it's still correct
-        RestAssured.port = port;
+        log.info("Switching to real server: {}", realServerUrl);
+        serverFactory = ServerFactoryProvider.getRealServerFactory(realServerUrl);
+        serverFactory.initialize();
+        TestConfig.setBaseUrl(serverFactory.baseUrl());
+    }
 
-        log.info("Using WireMock port: {}, RestAssured port: {}", port, RestAssured.port);
+    /**
+     * Switch to a mock server for tests
+     */
+    public static void useMockServer() {
+        // Clean up existing factory if needed
+        if (serverFactory != null) {
+            serverFactory.shutdown();
+        }
 
-        // Setup request specification with explicit port
-        requestSpec = new RequestSpecBuilder()
-                .setBaseUri("http://localhost")
-                .setPort(port)
-                .setUrlEncodingEnabled(false) // Prevent URL encoding issues
-                .addFilter(new RequestLoggingFilter())
-                .addFilter(new ResponseLoggingFilter())
-                .build();
-
-        // Make sure the request spec has proper port
-        // log.info("RequestSpec baseURI: {}, port: {}", requestSpec.getBaseUri(), requestSpec.getPort());
-
-        // Setup response specification
-        responseSpec = new ResponseSpecBuilder()
-                .expectContentType("application/json")
-                .build();
+        log.info("Switching to mock server");
+        serverFactory = ServerFactoryProvider.getMockServerFactory();
+        serverFactory.initialize();
+        TestConfig.setBaseUrl(serverFactory.baseUrl());
     }
 
     @AfterClass
     public void tearDownTest() {
         log.info("Tearing down test");
-        wireMockServer.resetAll();
+        if (serverFactory.isMockServer()) {
+            serverFactory.reset();
+        }
     }
 
     @AfterSuite
-    public static void tearDownWireMock() {
-        log.info("Stopping WireMock server");
-        if (wireMockServer != null && wireMockServer.isRunning()) {
-            wireMockServer.stop();
+    public static void tearDownServer() {
+        log.info("Shutting down server");
+        if (serverFactory != null) {
+            serverFactory.shutdown();
         }
     }
 }
