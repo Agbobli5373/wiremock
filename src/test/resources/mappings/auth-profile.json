@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/auth/profile",
+    "headers": {
+      "Authorization": {
+        "matches": "Bearer .*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "id": "user-123",
+      "email": "user@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "createdAt": "2023-01-15T10:30:00Z",
+      "shippingAddresses": [
+        {
+          "id": "addr-1",
+          "street": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "zipCode": "10001",
+          "country": "USA",
+          "isDefault": true
+        }
+      ]
+    }
+  }
+}

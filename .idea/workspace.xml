@@ -7,10 +7,8 @@
     <list default="true" id="411bfaf3-514d-4c7d-9513-8d2a5fe73d01" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/amalitech/test/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/amalitech/test/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/amalitech/test/sample/SampleApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/amalitech/test/sample/SampleApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/amalitech/test/utils/ApiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/amalitech/test/utils/ApiUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/amalitech/test/utils/WireMockUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/amalitech/test/utils/WireMockUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/amalitech/test/server/RealServerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/amalitech/test/server/RealServerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/amalitech/test/server/WireMockServerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/amalitech/test/server/WireMockServerFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.AuthApiTest.executor": "Run",
+    "Gradle.ProductApiTest.executor": "Run",
     "Gradle.SampleApiTest.executor": "Run",
     "Gradle.SampleApiTest.testSuccessfulGetRequest.executor": "Debug",
     "Gradle.wiremock [:Main.main()].executor": "Run",
@@ -61,19 +61,54 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.SampleApiTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.amalitech.Main" />
-      <module name="wiremock.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.amalitech.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.AuthApiTest">
+    <configuration name="AuthApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.amalitech.test.ecommerce.AuthApiTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.amalitech.test.ecommerce.ProductApiTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="SampleApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -156,10 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AuthApiTest" />
         <item itemvalue="Gradle.SampleApiTest.testSuccessfulGetRequest" />
+        <item itemvalue="Gradle.ProductApiTest" />
         <item itemvalue="Gradle.SampleApiTest" />
         <item itemvalue="Gradle.wiremock [wrapper]" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -179,22 +215,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742482393727</updated>
-      <workItem from="1742482394913" duration="7968000" />
+      <workItem from="1742482394913" duration="9401000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/amalitech/test/utils/ApiUtils.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

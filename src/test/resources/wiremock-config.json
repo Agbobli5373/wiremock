@@ -1,0 +1,6 @@
+{
+  "mappingsDirectory": "mappings",
+  "filesDirectory": "__files",
+  "port": 8080,
+  "verbose": true
+}

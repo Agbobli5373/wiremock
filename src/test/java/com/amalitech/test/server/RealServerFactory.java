@@ -14,15 +14,17 @@ import static io.restassured.config.RestAssuredConfig.config;
 /**
  * Factory for connecting to real server
  */
-public record RealServerFactory(String baseUrl) implements ServerFactory {
+public class RealServerFactory implements ServerFactory {
     private static final Logger log = LoggerFactory.getLogger(RealServerFactory.class);
+    private String baseUrl;
 
     /**
      * Constructor with base URL
-     *
+     * 
      * @param baseUrl Full URL of the real server
      */
-    public RealServerFactory {
+    public RealServerFactory(String baseUrl) {
+        this.baseUrl = baseUrl;
     }
 
     @Override
@@ -50,6 +52,11 @@ public record RealServerFactory(String baseUrl) implements ServerFactory {
     public void shutdown() {
         // No shutdown needed for real server
         log.info("Shutdown operation not applicable for real server");
+    }
+
+    @Override
+    public String baseUrl() {
+        return baseUrl;
     }
 
     @Override

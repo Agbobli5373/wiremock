@@ -371,3 +371,1145 @@
 17:21:34.016 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@109a2025{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
 17:21:34.023 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@315f09ef{/,null,STOPPED}
 17:21:34.025 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@25aeb5ac{/__admin,null,STOPPED}
+17:55:13.702 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:55:13.733 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:55:13.814 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:55:13.820 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:55:13.880 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:55:13.889 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:55:13.977 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:55:13.988 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:55:14.081 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:55:14.088 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:55:14.134 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:55:14.145 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:55:14.471 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+17:55:18.434 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @8388ms to org.eclipse.jetty.util.log.Slf4jLog
+17:55:19.135 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:55:19.290 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6e4c0d8c{/__admin,null,AVAILABLE}
+17:55:19.383 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:55:19.386 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@15c4af7a{/,null,AVAILABLE}
+17:55:19.465 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@30364216{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:55:19.467 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @9421ms
+17:55:19.470 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+17:55:23.724 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:55:23.842 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:55:25.397 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:55:25.538 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:55:25.545 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:55:25.547 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:55:25.594 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+17:55:25.623 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+17:55:25.664 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+17:55:25.673 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+17:55:25.706 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+17:55:29.290 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+17:55:46.488 [qtp1167792250-43] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:55:47.246 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:55:47.248 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:55:47.323 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+17:55:47.325 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+17:55:47.447 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@30364216{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:55:47.451 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@15c4af7a{/,null,STOPPED}
+17:55:47.455 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6e4c0d8c{/__admin,null,STOPPED}
+17:57:41.814 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:57:41.954 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.063 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.073 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.129 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.137 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.199 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.207 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.278 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.286 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.329 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.340 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:57:42.576 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+17:57:45.976 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @9174ms to org.eclipse.jetty.util.log.Slf4jLog
+17:57:46.573 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:57:46.652 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@396639b{/__admin,null,AVAILABLE}
+17:57:46.696 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:57:46.697 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@65c86db8{/,null,AVAILABLE}
+17:57:46.758 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@7afb1741{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:57:46.760 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @9958ms
+17:57:46.764 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+17:57:48.174 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:57:48.256 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:57:48.615 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:57:48.618 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:57:48.620 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:57:48.682 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:57:48.682 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:57:48.683 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:57:48.685 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:57:48.685 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:57:48.683 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:57:48.685 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:57:48.687 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:57:48.687 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:57:48.688 [TestNG-test=WireMock API Tests-4] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:57:48.685 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:57:48.691 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:57:48.707 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+17:57:48.902 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/auth/profile (baseUri: http://localhost:8080)
+17:57:48.902 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/change-password (baseUri: http://localhost:8080)
+17:57:48.903 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/logout (baseUri: http://localhost:8080)
+17:57:49.122 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+17:57:49.125 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/logout
+17:57:49.136 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/profile
+17:57:49.138 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/change-password
+17:57:54.115 [qtp1163404461-47] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:57:54.187 [qtp1163404461-55] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/logout                                    <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:57:54.187 [qtp1163404461-47] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/change-password                           <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:57:54.187 [qtp1163404461-54] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/login                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:57:54.188 [qtp1163404461-46] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/api/products                                              | /api/auth/profile                                   <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:57:55.011 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:57:55.011 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:57:55.014 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:57:55.011 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:57:55.014 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:57:55.014 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:57:55.015 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:57:55.017 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:57:55.017 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:57:55.024 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/register (baseUri: http://localhost:8080)
+17:57:55.024 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/register (baseUri: http://localhost:8080)
+17:57:55.024 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+17:57:55.028 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/register
+17:57:55.033 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/register
+17:57:55.034 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+17:57:55.114 [qtp1163404461-41] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/register                                  <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:57:55.128 [qtp1163404461-40] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/register                                  <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:57:55.157 [qtp1163404461-52] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/login                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:57:55.176 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:57:55.177 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:57:55.200 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+17:57:55.201 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+17:57:55.253 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@7afb1741{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:57:55.259 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@65c86db8{/,null,STOPPED}
+17:57:55.260 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@396639b{/__admin,null,STOPPED}
+17:59:24.521 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.555 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.649 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.656 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.702 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.706 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.753 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.759 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.822 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.828 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.864 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+17:59:24.871 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+17:59:25.062 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+17:59:27.695 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @6623ms to org.eclipse.jetty.util.log.Slf4jLog
+17:59:28.254 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+17:59:28.361 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@56913163{/__admin,null,AVAILABLE}
+17:59:28.420 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+17:59:28.422 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@41b1f51e{/,null,AVAILABLE}
+17:59:28.512 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@6fca5907{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:59:28.514 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @7442ms
+17:59:28.516 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+17:59:30.195 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+17:59:30.286 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:59:30.542 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:59:30.545 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+17:59:30.546 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:59:30.593 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:59:30.593 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:59:30.593 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:59:30.593 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:59:30.594 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:59:30.594 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:59:30.595 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:59:30.596 [TestNG-test=WireMock API Tests-4] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:59:30.595 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:59:30.595 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:59:30.597 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:59:30.596 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:59:30.610 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/products/categories (baseUri: http://localhost:8080)
+17:59:30.610 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/products/1 (baseUri: http://localhost:8080)
+17:59:30.610 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/products (baseUri: http://localhost:8080)
+17:59:30.610 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/products/999 (baseUri: http://localhost:8080)
+17:59:30.946 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/products/categories
+17:59:30.947 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/products
+17:59:30.946 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/products/1
+17:59:30.946 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/products/999
+17:59:34.953 [qtp1429133319-45] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+17:59:35.018 [qtp1429133319-45] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/api/products                                              | /api/products/1                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:59:35.018 [qtp1429133319-54] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/api/products                                              | /api/products/categories                            <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:59:35.018 [qtp1429133319-52] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/api/products                                              | /api/products/999                                   <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:59:36.047 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+17:59:36.051 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+17:59:36.053 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:59:36.074 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/products/search?query=phone (baseUri: http://localhost:8080)
+17:59:36.086 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/products/search?query=phone
+17:59:37.078 [qtp1429133319-41] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/api/products                                              | /api/products/search?query=phone                    <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+17:59:38.896 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+17:59:38.897 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+17:59:38.922 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+17:59:38.923 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+17:59:38.939 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@6fca5907{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+17:59:38.943 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@41b1f51e{/,null,STOPPED}
+17:59:38.945 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@56913163{/__admin,null,STOPPED}
+18:00:32.184 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.200 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.245 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.249 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.271 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.273 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.303 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.308 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.351 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.354 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.373 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.377 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:00:32.484 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+18:00:34.198 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @3917ms to org.eclipse.jetty.util.log.Slf4jLog
+18:00:34.421 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+18:00:34.451 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@396639b{/__admin,null,AVAILABLE}
+18:00:34.466 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+18:00:34.467 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@65c86db8{/,null,AVAILABLE}
+18:00:34.489 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@7afb1741{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+18:00:34.490 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @4210ms
+18:00:34.491 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+18:00:35.255 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+18:00:35.319 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+18:00:35.539 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:00:35.542 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+18:00:35.543 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:00:35.589 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:00:35.589 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:00:35.589 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:00:35.591 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:00:35.591 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:00:35.589 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:00:35.592 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:00:35.593 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:00:35.593 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:00:35.591 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:00:35.594 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:00:35.591 [TestNG-test=WireMock API Tests-4] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:00:35.609 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+18:00:35.747 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/change-password (baseUri: http://localhost:8080)
+18:00:35.747 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/auth/profile (baseUri: http://localhost:8080)
+18:00:35.747 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/logout (baseUri: http://localhost:8080)
+18:00:35.878 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/logout
+18:00:35.879 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/change-password
+18:00:35.879 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/profile
+18:00:35.879 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+18:00:38.333 [qtp1163404461-46] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+18:00:38.377 [qtp1163404461-54] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/change-password                           <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:00:38.377 [qtp1163404461-46] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/login                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:00:38.377 [qtp1163404461-40] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/logout                                    <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:00:38.386 [qtp1163404461-47] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/api/products                                              | /api/auth/profile                                   <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:00:38.941 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:00:38.941 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:00:38.941 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:00:38.944 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:00:38.944 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:00:38.945 [TestNG-test=WireMock API Tests-4] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:00:38.944 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:00:38.951 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:00:38.945 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:00:38.957 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/register (baseUri: http://localhost:8080)
+18:00:38.958 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+18:00:38.961 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/register
+18:00:38.961 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+18:00:38.964 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/register (baseUri: http://localhost:8080)
+18:00:38.970 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/register
+18:00:39.034 [qtp1163404461-41] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/login                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:00:39.037 [qtp1163404461-45] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/register                                  <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:00:39.104 [qtp1163404461-52] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/register                                  <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:00:39.117 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+18:00:39.117 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:00:39.145 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+18:00:39.145 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+18:00:39.178 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@7afb1741{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+18:00:39.182 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@65c86db8{/,null,STOPPED}
+18:00:39.185 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@396639b{/__admin,null,STOPPED}
+18:03:45.545 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.681 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.770 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.774 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.809 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.815 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.854 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.858 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.896 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.900 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.921 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:03:45.923 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:03:46.053 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+18:03:49.121 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @9459ms to org.eclipse.jetty.util.log.Slf4jLog
+18:03:49.479 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+18:03:49.576 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3ba46e63{/__admin,null,AVAILABLE}
+18:03:49.614 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+18:03:49.615 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7dbe2ebf{/,null,AVAILABLE}
+18:03:49.656 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@6726cc69{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+18:03:49.657 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @9994ms
+18:03:49.658 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+18:03:51.112 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+18:03:51.254 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+18:03:51.759 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:03:51.795 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:03:51.798 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:03:51.801 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:03:51.811 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+18:03:51.821 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+18:03:51.836 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+18:03:51.837 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+18:03:51.840 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+18:03:52.184 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+18:03:57.773 [qtp1547994163-45] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+18:03:57.851 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+18:03:57.852 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:03:57.871 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+18:03:57.871 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+18:03:57.886 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@6726cc69{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+18:03:57.889 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7dbe2ebf{/,null,STOPPED}
+18:03:57.890 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3ba46e63{/__admin,null,STOPPED}
+18:04:08.473 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.489 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.543 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.547 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.573 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.576 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.603 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.607 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.639 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.642 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.658 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.661 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+18:04:08.750 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+18:04:10.444 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @5794ms to org.eclipse.jetty.util.log.Slf4jLog
+18:04:10.831 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+18:04:10.891 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@396639b{/__admin,null,AVAILABLE}
+18:04:10.921 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+18:04:10.921 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@65c86db8{/,null,AVAILABLE}
+18:04:10.963 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@7afb1741{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+18:04:10.964 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @6314ms
+18:04:10.966 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+18:04:12.289 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+18:04:12.467 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+18:04:12.954 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:04:12.960 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+18:04:12.963 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:04:13.067 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:04:13.067 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:04:13.067 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:04:13.070 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:04:13.067 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:04:13.071 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:04:13.072 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:04:13.071 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:04:13.073 [TestNG-test=WireMock API Tests-4] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:04:13.071 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:04:13.095 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+18:04:13.073 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:04:13.097 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:04:13.328 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/logout (baseUri: http://localhost:8080)
+18:04:13.331 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/change-password (baseUri: http://localhost:8080)
+18:04:13.333 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/auth/profile (baseUri: http://localhost:8080)
+18:04:13.475 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+18:04:13.475 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/change-password
+18:04:13.476 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/logout
+18:04:13.475 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/profile
+18:04:16.194 [qtp1163404461-54] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+18:04:16.237 [qtp1163404461-45] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/logout                                    <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:04:16.237 [qtp1163404461-47] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/change-password                           <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:04:16.237 [qtp1163404461-54] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/login                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:04:16.276 [qtp1163404461-55] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/api/products                                              | /api/auth/profile                                   <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:04:16.750 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:04:16.750 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:04:16.751 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+18:04:16.752 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:04:16.752 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:04:16.753 [TestNG-test=WireMock API Tests-4] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:04:16.753 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:04:16.755 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+18:04:16.757 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:04:16.762 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+18:04:16.762 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/register (baseUri: http://localhost:8080)
+18:04:16.776 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/register (baseUri: http://localhost:8080)
+18:04:16.777 [TestNG-test=WireMock API Tests-4] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+18:04:16.777 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/register
+18:04:16.779 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/register
+18:04:16.846 [qtp1163404461-43] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/login                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:04:16.850 [qtp1163404461-40] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/register                                  <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:04:16.872 [qtp1163404461-52] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/register                                  <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+18:04:16.893 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+18:04:16.895 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+18:04:16.923 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+18:04:16.925 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+18:04:16.965 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@7afb1741{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+18:04:16.973 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@65c86db8{/,null,STOPPED}
+18:04:16.977 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@396639b{/__admin,null,STOPPED}
+08:14:07.201 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.268 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.539 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.552 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.656 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.670 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.740 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.748 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.859 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.867 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:07.936 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:08.015 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:08.523 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+08:14:15.865 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @27363ms to org.eclipse.jetty.util.log.Slf4jLog
+08:14:17.792 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+08:14:18.000 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1f346ad2{/__admin,null,AVAILABLE}
+08:14:18.238 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+08:14:18.274 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@a2341c6{/,null,AVAILABLE}
+08:14:18.570 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@644ded04{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:14:18.574 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @30073ms
+08:14:18.582 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+08:14:22.442 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+08:14:22.546 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:14:22.922 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:14:22.961 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+08:14:22.963 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:14:22.966 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:14:22.987 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+08:14:23.003 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+08:14:23.025 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+08:14:23.027 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+08:14:23.029 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+08:14:23.737 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+08:14:30.353 [qtp639769517-43] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+08:14:30.434 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+08:14:30.435 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:14:30.453 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+08:14:30.454 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+08:14:30.472 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@644ded04{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:14:30.476 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@a2341c6{/,null,STOPPED}
+08:14:30.477 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1f346ad2{/__admin,null,STOPPED}
+08:14:42.597 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.617 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.664 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.669 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.696 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.702 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.727 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.730 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.766 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.769 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.787 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.791 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:14:42.903 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+08:14:45.205 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @5793ms to org.eclipse.jetty.util.log.Slf4jLog
+08:14:45.557 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+08:14:45.609 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7d3fb0ef{/__admin,null,AVAILABLE}
+08:14:45.631 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+08:14:45.631 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6cd3ad8a{/,null,AVAILABLE}
+08:14:45.665 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@546e61d5{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:14:45.666 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @6255ms
+08:14:45.667 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+08:14:46.637 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+08:14:46.705 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:14:46.982 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:14:47.011 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+08:14:47.017 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:14:47.018 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:14:47.025 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+08:14:47.031 [TestNG-test=WireMock API Tests-1] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+08:14:47.041 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+08:14:47.042 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+08:14:47.042 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+08:14:47.264 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+08:14:51.219 [qtp950729555-43] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+08:14:51.280 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+08:14:51.281 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:14:51.296 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+08:14:51.298 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+08:14:51.314 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@546e61d5{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:14:51.319 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6cd3ad8a{/,null,STOPPED}
+08:14:51.319 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7d3fb0ef{/__admin,null,STOPPED}
+08:15:44.283 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.297 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.335 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.338 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.357 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.359 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.379 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.382 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.398 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.400 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.423 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.425 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:15:44.525 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+08:15:46.456 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @3698ms to org.eclipse.jetty.util.log.Slf4jLog
+08:15:46.688 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+08:15:46.726 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4adc663e{/__admin,null,AVAILABLE}
+08:15:46.746 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+08:15:46.746 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2d64160c{/,null,AVAILABLE}
+08:15:46.778 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@60783105{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:15:46.779 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @4022ms
+08:15:46.780 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+08:15:47.614 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+08:15:47.664 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:15:47.878 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:15:47.879 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:15:47.880 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:15:47.934 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+08:15:47.935 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:15:47.936 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:15:47.947 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+08:15:48.184 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+08:15:49.904 [qtp1744032146-50] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+08:15:49.929 [qtp1744032146-50] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/login                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+08:15:50.234 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+08:15:50.235 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:15:50.245 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+08:15:50.245 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+08:15:50.258 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@60783105{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:15:50.261 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2d64160c{/,null,STOPPED}
+08:15:50.262 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4adc663e{/__admin,null,STOPPED}
+08:17:04.828 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:17:04.845 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:17:04.913 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:17:04.919 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:17:04.955 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:17:04.958 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:17:04.990 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:17:04.994 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:17:05.042 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:17:05.045 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:17:05.073 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:17:05.079 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:17:05.221 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+08:17:07.003 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @5103ms to org.eclipse.jetty.util.log.Slf4jLog
+08:17:07.220 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+08:17:07.255 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@396639b{/__admin,null,AVAILABLE}
+08:17:07.274 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+08:17:07.275 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@65c86db8{/,null,AVAILABLE}
+08:17:07.301 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@7afb1741{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:17:07.302 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @5402ms
+08:17:07.304 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+08:17:08.004 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+08:17:08.073 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:17:08.343 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:17:08.375 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+08:17:08.375 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+08:17:08.375 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+08:17:08.376 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:17:08.376 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:17:08.378 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:17:08.377 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:17:08.378 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:17:08.382 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:17:08.390 [TestNG-test=WireMock API Tests-3] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+08:17:08.390 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+08:17:08.390 [TestNG-test=WireMock API Tests-2] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+08:17:08.402 [TestNG-test=WireMock API Tests-2] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+08:17:08.424 [TestNG-test=WireMock API Tests-2] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+08:17:08.425 [TestNG-test=WireMock API Tests-2] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+08:17:08.429 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+08:17:08.427 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/users (baseUri: http://localhost:8080)
+08:17:08.427 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/999 (baseUri: http://localhost:8080)
+08:17:08.834 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+08:17:08.835 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/999
+08:17:08.843 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users
+08:17:13.498 [qtp1163404461-41] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+08:17:13.569 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+08:17:13.569 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:17:13.588 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+08:17:13.589 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+08:17:13.606 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@7afb1741{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:17:13.610 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@65c86db8{/,null,STOPPED}
+08:17:13.611 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@396639b{/__admin,null,STOPPED}
+08:30:23.149 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.267 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.323 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.327 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.351 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.355 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.378 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.384 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.417 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.419 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.436 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.439 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:30:23.548 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+08:30:25.809 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @6091ms to org.eclipse.jetty.util.log.Slf4jLog
+08:30:26.189 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+08:30:26.222 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2b22a1cc{/__admin,null,AVAILABLE}
+08:30:26.241 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+08:30:26.242 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7efe7b87{/,null,AVAILABLE}
+08:30:26.272 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@263bbfeb{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:30:26.273 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @6554ms
+08:30:26.274 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+08:30:27.330 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+08:30:27.378 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:30:27.609 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:30:27.612 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:30:27.613 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:38:56.813 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:38:56.976 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.043 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.048 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.084 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.090 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.130 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.135 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.180 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.184 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.210 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.213 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:38:57.343 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+08:39:00.688 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @7776ms to org.eclipse.jetty.util.log.Slf4jLog
+08:39:01.364 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+08:39:01.513 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2b22a1cc{/__admin,null,AVAILABLE}
+08:39:01.560 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+08:39:01.561 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7efe7b87{/,null,AVAILABLE}
+08:39:01.633 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@263bbfeb{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:39:01.635 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @8724ms
+08:39:01.640 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+08:39:03.672 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+08:39:03.741 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:39:04.038 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:39:04.040 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:39:04.042 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:40:48.373 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.497 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.530 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.533 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.553 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.556 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.576 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.580 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.607 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.615 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.645 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.649 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:40:48.754 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+08:40:52.827 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @7584ms to org.eclipse.jetty.util.log.Slf4jLog
+08:40:53.544 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+08:40:53.613 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@56913163{/__admin,null,AVAILABLE}
+08:40:53.642 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+08:40:53.643 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@41b1f51e{/,null,AVAILABLE}
+08:40:53.692 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@6fca5907{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:40:53.693 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @8450ms
+08:40:53.695 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+08:40:55.143 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+08:40:55.194 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:40:55.426 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:40:55.429 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:40:55.431 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:40:55.571 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+08:40:55.572 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:40:55.572 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:40:55.596 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+08:40:55.961 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+08:40:59.142 [qtp1429133319-47] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+08:40:59.182 [qtp1429133319-47] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/login                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+08:40:59.622 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+08:40:59.623 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:40:59.641 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+08:40:59.642 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+08:40:59.663 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@6fca5907{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:40:59.667 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@41b1f51e{/,null,STOPPED}
+08:40:59.668 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@56913163{/__admin,null,STOPPED}
+08:50:31.067 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.189 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.238 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.241 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.263 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.266 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.294 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.297 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.325 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.328 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.343 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.347 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:50:31.435 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+08:50:33.231 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @5133ms to org.eclipse.jetty.util.log.Slf4jLog
+08:50:33.493 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+08:50:33.527 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5c534b5b{/__admin,null,AVAILABLE}
+08:50:33.543 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+08:50:33.545 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2b9f74d0{/,null,AVAILABLE}
+08:50:33.570 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@47447ccf{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:50:33.571 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @5474ms
+08:50:33.573 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+08:50:34.494 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+08:50:34.540 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:50:34.726 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:50:34.728 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:50:34.729 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:50:34.730 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.ecommerce.AuthApiTest - Setting up WireMock server stubs. WireMock server is not null
+08:50:34.731 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.ecommerce.AuthApiTest - Configuring WireMock stubs for authentication API
+08:50:34.878 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.ecommerce.AuthApiTest - WireMock stubs have been configured successfully
+08:50:34.908 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+08:50:34.910 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:50:34.911 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:50:34.923 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.ecommerce.AuthApiTest - Running testSuccessfulLogin
+08:50:34.925 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+08:50:35.068 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+08:50:36.587 [qtp1712666248-47] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+08:50:36.604 [qtp1712666248-47] ERROR WireMock - 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/api/products                                              | /api/auth/login                                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+08:50:36.775 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+08:50:36.775 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:50:36.783 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+08:50:36.783 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+08:50:36.794 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@47447ccf{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:50:36.795 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2b9f74d0{/,null,STOPPED}
+08:50:36.796 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5c534b5b{/__admin,null,STOPPED}
+08:58:58.080 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.092 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.134 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.137 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.156 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.162 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.190 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.193 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.218 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.221 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.234 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.236 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+08:58:58.331 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+08:58:59.646 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @4720ms to org.eclipse.jetty.util.log.Slf4jLog
+08:58:59.858 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+08:58:59.891 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c1e32c9{/__admin,null,AVAILABLE}
+08:58:59.910 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+08:58:59.911 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@27df0f3d{/,null,AVAILABLE}
+08:58:59.937 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@37ed010a{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:58:59.938 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @5012ms
+08:58:59.939 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+08:59:01.021 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+08:59:01.084 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:59:01.302 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:59:01.303 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+08:59:01.305 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:59:01.306 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.ecommerce.AuthApiTest - WireMock server setup with mappings from resources directory. WireMock server is not null
+08:59:01.334 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+08:59:01.335 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+08:59:01.335 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:59:01.355 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.ecommerce.AuthApiTest - Running testSuccessfulLogin
+08:59:01.506 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/auth/login (baseUri: http://localhost:8080)
+08:59:01.648 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/auth/login
+08:59:04.434 [qtp730955696-40] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+08:59:04.497 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+08:59:04.497 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+08:59:04.512 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+08:59:04.512 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+08:59:04.533 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@37ed010a{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+08:59:04.535 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@27df0f3d{/,null,STOPPED}
+08:59:04.536 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7c1e32c9{/__admin,null,STOPPED}
+09:01:17.008 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.020 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.064 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.069 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.093 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.096 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.121 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.124 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.157 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.162 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.183 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.setupServerFactory()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.186 [Test worker] WARN  org.testng.internal.Configuration - Detected a static method [com.amalitech.test.base.BaseTest.tearDownServer()]. Static configuration methods can cause  unexpected behavior.
+09:01:17.297 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Starting WireMock server
+09:01:19.299 [Test worker] INFO  org.eclipse.jetty.util.log - Logging initialized @4567ms to org.eclipse.jetty.util.log.Slf4jLog
+09:01:19.603 [Test worker] INFO  org.eclipse.jetty.server.Server - jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 21.0.5+11-LTS
+09:01:19.647 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c1e32c9{/__admin,null,AVAILABLE}
+09:01:19.669 [Test worker] INFO  o.e.j.s.handler.ContextHandler.ROOT - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+09:01:19.670 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@27df0f3d{/,null,AVAILABLE}
+09:01:19.701 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Started NetworkTrafficServerConnector@37ed010a{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+09:01:19.702 [Test worker] INFO  org.eclipse.jetty.server.Server - Started @4970ms
+09:01:19.704 [Test worker] INFO  c.a.t.server.WireMockServerFactory - WireMock server started on port: 8080
+09:01:20.585 [Test worker] INFO  c.a.t.server.WireMockServerFactory - RestAssured configured with baseURI: http://localhost, port: 8080, basePath: ''
+09:01:20.629 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test class setup
+09:01:20.833 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+09:01:20.854 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+09:01:20.854 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+09:01:20.854 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Base test method setup
+09:01:20.855 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+09:01:20.856 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+09:01:20.855 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.base.BaseTest - Using server at: http://localhost:8080
+09:01:20.856 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+09:01:20.857 [TestNG-test=WireMock API Tests-2] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+09:01:20.857 [TestNG-test=WireMock API Tests-1] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+09:01:20.886 [TestNG-test=WireMock API Tests-2] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+09:01:20.886 [TestNG-test=WireMock API Tests-3] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+09:01:20.886 [TestNG-test=WireMock API Tests-1] INFO  c.a.test.sample.SampleApiTest - Using WireMock server on port: 8080
+09:01:20.893 [TestNG-test=WireMock API Tests-2] INFO  c.amalitech.test.utils.WireMockUtils - Stubbing GET request for URL: /api/users/1
+09:01:20.903 [TestNG-test=WireMock API Tests-2] INFO  c.a.test.sample.SampleApiTest - Stubbed GET request to /api/users/1 with 200 response
+09:01:20.903 [TestNG-test=WireMock API Tests-2] INFO  c.a.test.sample.SampleApiTest - Sending request to endpoint: /api/users/1
+09:01:20.903 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/999 (baseUri: http://localhost:8080)
+09:01:20.904 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Performing GET request to: /api/users/1 (baseUri: http://localhost:8080)
+09:01:20.904 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Performing POST request to: /api/users (baseUri: http://localhost:8080)
+09:01:21.179 [TestNG-test=WireMock API Tests-2] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/1
+09:01:21.180 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users
+09:01:21.180 [TestNG-test=WireMock API Tests-1] INFO  com.amalitech.test.utils.ApiUtils - Full request URL: http://localhost:8080/api/users/999
+09:01:25.550 [qtp730955696-41] INFO  o.e.j.s.h.ContextHandler.__admin - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+09:01:25.608 [TestNG-test=WireMock API Tests-3] INFO  com.amalitech.test.base.BaseTest - Tearing down test
+09:01:25.609 [TestNG-test=WireMock API Tests-3] INFO  c.a.t.server.WireMockServerFactory - Resetting WireMock server
+09:01:25.644 [Test worker] INFO  com.amalitech.test.base.BaseTest - Shutting down server
+09:01:25.645 [Test worker] INFO  c.a.t.server.WireMockServerFactory - Stopping WireMock server
+09:01:25.658 [Test worker] INFO  o.e.jetty.server.AbstractConnector - Stopped NetworkTrafficServerConnector@37ed010a{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+09:01:25.661 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@27df0f3d{/,null,STOPPED}
+09:01:25.661 [Test worker] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7c1e32c9{/__admin,null,STOPPED}

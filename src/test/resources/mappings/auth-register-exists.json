@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/auth/register",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.email",
+        "equalTo": "existing@example.com"
+      }
+    ]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "error": "Email already exists"
+    }
+  }
+}

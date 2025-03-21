@@ -1,0 +1,7 @@
+{
+  "id": "user-456",
+  "email": "newuser@example.com",
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLTQ1NiIsIm5hbWUiOiJKYW5lIFNtaXRoIiwiaWF0IjoxNTE2MjM5MDIyfQ.N_2rV4EB9IjlJ3pliXmvTEgNggh5uTo-ZN9ySaP-qcg"
+}

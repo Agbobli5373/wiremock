@@ -5,6 +5,7 @@ import com.amalitech.test.server.ServerFactory;
 import com.amalitech.test.server.ServerFactoryProvider;
 import com.amalitech.test.server.WireMockServerFactory;
 import com.github.tomakehurst.wiremock.WireMockServer;
+import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.slf4j.Logger;
@@ -20,13 +21,38 @@ public abstract class BaseTest {
     protected static ServerFactory serverFactory;
     protected RequestSpecification requestSpec;
     protected ResponseSpecification responseSpec;
+    private WireMockServer wireMockServer;
 
-    // Convenience method to get WireMock server if using mock server
     protected WireMockServer getWireMockServer() {
         if (serverFactory instanceof WireMockServerFactory) {
             return ((WireMockServerFactory) serverFactory).getWireMockServer();
         }
-        return null;
+
+        // If the WireMock server is null, create it with configuration from classpath
+        // resources
+        if (wireMockServer == null) {
+            log.info("Creating new WireMock server with mappings from classpath resources");
+
+            try {
+                WireMockConfiguration config = WireMockConfiguration.options()
+                        .port(8080) // Use the default port or get from properties
+                        .usingFilesUnderClasspath("src/test/resources"); // Important: This tells WireMock to look for
+                                                                         // mappings in the classpath
+
+                wireMockServer = new WireMockServer(config);
+                wireMockServer.start();
+                log.info("WireMock server started with configuration from classpath resources");
+
+                // Log mapping info for debugging
+                log.info("WireMock mappings loaded: {}", wireMockServer.getStubMappings().size());
+                wireMockServer.getStubMappings().forEach(mapping -> log.debug("Loaded mapping: {}",
+                        mapping.getName() != null ? mapping.getName() : mapping.getRequest().getUrl()));
+            } catch (Exception e) {
+                log.error("Failed to start WireMock server with classpath resources", e);
+            }
+        }
+
+        return wireMockServer;
     }
 
     @BeforeSuite
@@ -62,7 +88,7 @@ public abstract class BaseTest {
 
     /**
      * Switch to a real server for tests
-     * 
+     *
      * @param realServerUrl URL of the real server
      */
     public static void useRealServer(String realServerUrl) {

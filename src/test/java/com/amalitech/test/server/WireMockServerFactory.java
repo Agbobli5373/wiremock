@@ -65,9 +65,6 @@ public class WireMockServerFactory implements ServerFactory {
 
         log.info("RestAssured configured with baseURI: {}, port: {}, basePath: '{}'",
                 RestAssured.baseURI, RestAssured.port, RestAssured.basePath);
-
-        RestAssured.config = config()
-                .encoderConfig(encoderConfig().defaultContentCharset("UTF-8"));
     }
 
     @Override
