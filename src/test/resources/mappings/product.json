@@ -1,0 +1,145 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/products"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 1,
+            "name": "Apple iPhone 12",
+            "price": 799.99,
+            "category": "Electronics"
+          },
+          {
+            "id": 2,
+            "name": "Samsung Galaxy S21",
+            "price": 899.99,
+            "category": "Electronics"
+          },
+          {
+            "id": 3,
+            "name": "Levi's 501 Original Fit Jeans",
+            "price": 49.99,
+            "category": "Clothing"
+          },
+          {
+            "id": 4,
+            "name": "The Great Gatsby",
+            "price": 9.99,
+            "category": "Books"
+          },
+          {
+            "id": 5,
+            "name": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+            "price": 79.99,
+            "category": "Home & Kitchen"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/products/search",
+        "queryParameters": {
+          "query": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 1,
+            "name": "Apple iPhone 12",
+            "price": 799.99,
+            "category": "Electronics"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/products/categories"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": "{\"categories\": [\"Electronics\", \"Clothing\", \"Books\", \"Home & Kitchen\"]}"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "urlPattern": "/api/products/\\d+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": 1,
+          "name": "Apple iPhone 12",
+          "price": 799.99,
+          "category": "Electronics"
+        }
+      },
+      "priority": 1
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/products/999"
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": "{\"error\": \"Product not found\"}"
+      },
+      "priority": 2
+    },
+    {
+      "request": {
+        "method": "GET",
+        "urlPattern": "/api/products/\\d+/reviews"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": [
+          {
+            "id": 1,
+            "productId": 1,
+            "rating": 5,
+            "comment": "Great phone!"
+          },
+          {
+            "id": 2,
+            "productId": 1,
+            "rating": 4,
+            "comment": "Good phone."
+          }
+        ]
+      }
+    }
+  ]
+}

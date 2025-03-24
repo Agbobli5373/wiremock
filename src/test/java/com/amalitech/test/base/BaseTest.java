@@ -56,7 +56,7 @@ public abstract class BaseTest {
     }
 
     @BeforeSuite
-    public static void setupServerFactory() {
+    public void setupServerFactory() {
         // By default, use mock server - can be changed by test configurations
         serverFactory = ServerFactoryProvider.getMockServerFactory();
         serverFactory.initialize();
@@ -91,7 +91,7 @@ public abstract class BaseTest {
      *
      * @param realServerUrl URL of the real server
      */
-    public static void useRealServer(String realServerUrl) {
+    public  void useRealServer(String realServerUrl) {
         // Clean up existing factory if needed
         if (serverFactory != null) {
             serverFactory.shutdown();
@@ -106,7 +106,7 @@ public abstract class BaseTest {
     /**
      * Switch to a mock server for tests
      */
-    public static void useMockServer() {
+    public void useMockServer() {
         // Clean up existing factory if needed
         if (serverFactory != null) {
             serverFactory.shutdown();
@@ -127,7 +127,7 @@ public abstract class BaseTest {
     }
 
     @AfterSuite
-    public static void tearDownServer() {
+    public  void tearDownServer() {
         log.info("Shutting down server");
         if (serverFactory != null) {
             serverFactory.shutdown();

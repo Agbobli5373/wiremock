@@ -1,12 +1,10 @@
-package com.amalitech.test.ecommerce;
+package com.amalitech.test.ecommerce.product;
 
 import com.amalitech.test.base.BaseTest;
 import com.amalitech.test.utils.ApiUtils;
 import com.github.tomakehurst.wiremock.WireMockServer;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -17,13 +15,12 @@ import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ProductApiTest extends BaseTest {
-    private WireMockServer wireMockServer;
     private static final String PRODUCTS_BASE_PATH = "/api/products";
 
     @BeforeClass
     public void setUp() {
         super.setupClass();
-         wireMockServer = getWireMockServer();
+        WireMockServer wireMockServer = getWireMockServer();
 //        log.info("WireMock server setup with mappings from resources directory. WireMock server is {}null",
 //                wireMockServer == null ? "" : "not ");
 

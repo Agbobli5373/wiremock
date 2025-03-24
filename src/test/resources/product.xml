@@ -3,7 +3,7 @@
 <suite name="API Test Suite" parallel="tests" thread-count="7">
     <test name="WireMock API Tests">
         <packages>
-            <package name="com.amalitech.test.ecommerce.auth.*" />
+            <package name="com.amalitech.test.ecommerce.product.*" />
         </packages>
     </test>
 </suite>

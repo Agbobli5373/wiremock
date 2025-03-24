@@ -1,0 +1,181 @@
+{
+  "mappings": [
+    {
+      "name": "Initiate checkout",
+      "request": {
+        "method": "POST",
+        "urlPath": "/api/checkout",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "checkoutId": "checkout-123",
+          "cartId": "cart-12345",
+          "subtotal": 599.99,
+          "tax": 60.00,
+          "shipping": 10.00,
+          "total": 669.99,
+          "paymentMethods": ["Credit Card", "PayPal", "Apple Pay"],
+          "shippingMethods": [
+            {"id": "standard", "name": "Standard Shipping", "price": 10.00, "estimatedDays": "3-5"},
+            {"id": "express", "name": "Express Shipping", "price": 25.00, "estimatedDays": "1-2"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Validate shipping address",
+      "request": {
+        "method": "POST",
+        "urlPath": "/api/checkout/shipping-address",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        },
+        "bodyPatterns": [
+          {
+            "matchesJsonPath": "$.address"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "valid": true,
+          "normalized": {
+            "street": "123 Main Street",
+            "city": "New York",
+            "state": "NY",
+            "zipCode": "10001",
+            "country": "USA"
+          }
+        }
+      }
+    },
+    {
+      "name": "Select shipping method",
+      "request": {
+        "method": "POST",
+        "urlPath": "/api/checkout/shipping-method",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        },
+        "bodyPatterns": [
+          {
+            "matchesJsonPath": "$.shippingMethodId"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "checkoutId": "checkout-123",
+          "shippingMethod": {
+            "id": "express",
+            "name": "Express Shipping",
+            "price": 25.00,
+            "estimatedDays": "1-2"
+          },
+          "subtotal": 599.99,
+          "tax": 60.00,
+          "shipping": 25.00,
+          "total": 684.99
+        }
+      }
+    },
+    {
+      "name": "Process payment",
+      "request": {
+        "method": "POST",
+        "urlPath": "/api/checkout/payment",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        },
+        "bodyPatterns": [
+          {
+            "matchesJsonPath": "$.paymentMethod"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "transactionId": "txn-abc-123",
+          "status": "success",
+          "orderId": "order-12345"
+        }
+      }
+    },
+    {
+      "name": "Get order details after checkout",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/orders/order-[0-9a-zA-Z-]+",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "order-12345",
+          "userId": "user-123",
+          "status": "pending",
+          "createdAt": "2023-07-15T08:30:45Z",
+          "items": [
+            {
+              "productId": 1,
+              "productName": "Smartphone",
+              "quantity": 1,
+              "unitPrice": 599.99,
+              "totalPrice": 599.99
+            }
+          ],
+          "subtotal": 599.99,
+          "tax": 60.00,
+          "shipping": 25.00,
+          "total": 684.99,
+          "shippingAddress": {
+            "street": "123 Main Street",
+            "city": "New York",
+            "state": "NY",
+            "zipCode": "10001",
+            "country": "USA"
+          },
+          "paymentInfo": {
+            "method": "Credit Card",
+            "transactionId": "txn-789-xyz",
+            "status": "completed"
+          }
+        }
+      }
+    }
+  ]
+}

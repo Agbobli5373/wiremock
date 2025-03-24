@@ -1,0 +1,322 @@
+{
+  "mappings": [
+    {
+      "name": "Get all orders",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/orders",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        },
+        "queryParameters": {
+          "status": {
+            "absent": true
+          },
+          "fromDate": {
+            "absent": true
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "orders": [
+            {
+              "id": "${orderId}",
+              "createdAt": "2023-07-15T08:30:45Z",
+              "status": "delivered",
+              "total": 684.99,
+              "items": 2
+            },
+            {
+              "id": "order-456",
+              "createdAt": "2023-06-30T14:22:33Z",
+              "status": "processing",
+              "total": 124.95,
+              "items": 1
+            }
+          ],
+          "totalCount": 2,
+          "page": 1,
+          "pageSize": 10,
+          "totalPages": 1
+        },
+        "transformers": ["response-template"]
+      }
+    },
+    {
+      "name": "Filter orders by status",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/orders",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        },
+        "queryParameters": {
+          "status": {
+            "equalTo": "processing"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "orders": [
+            {
+              "id": "order-456",
+              "createdAt": "2023-06-30T14:22:33Z",
+              "status": "processing",
+              "total": 124.95,
+              "items": 1
+            }
+          ],
+          "totalCount": 1,
+          "page": 1,
+          "pageSize": 10,
+          "totalPages": 1
+        }
+      }
+    },
+    {
+      "name": "Filter orders by date range",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/orders",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        },
+        "queryParameters": {
+          "fromDate": {
+            "matches": "\\d{4}-\\d{2}-\\d{2}"
+          },
+          "toDate": {
+            "matches": "\\d{4}-\\d{2}-\\d{2}"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "orders": [
+            {
+              "id": "${orderId}",
+              "createdAt": "2023-07-15T08:30:45Z",
+              "status": "delivered",
+              "total": 684.99,
+              "items": 2
+            }
+          ],
+          "totalCount": 1,
+          "page": 1,
+          "pageSize": 10,
+          "totalPages": 1
+        },
+        "transformers": ["response-template"]
+      }
+    },
+    {
+      "name": "Get specific order details",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/orders/[a-zA-Z0-9-]+",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "${request.pathSegments.[2]}",
+          "userId": "user-123",
+          "status": "delivered",
+          "createdAt": "2023-07-15T08:30:45Z",
+          "items": [
+            {
+              "productId": 1,
+              "productName": "Smartphone",
+              "quantity": 1,
+              "unitPrice": 599.99,
+              "totalPrice": 599.99
+            },
+            {
+              "productId": 3,
+              "productName": "Phone Case",
+              "quantity": 1,
+              "unitPrice": 24.99,
+              "totalPrice": 24.99
+            }
+          ],
+          "subtotal": 624.98,
+          "tax": 60.00,
+          "shipping": 0.00,
+          "total": 684.98,
+          "shippingAddress": {
+            "street": "123 Main Street",
+            "city": "New York",
+            "state": "NY",
+            "zipCode": "10001",
+            "country": "USA"
+          },
+          "paymentInfo": {
+            "method": "Credit Card",
+            "transactionId": "txn-abc-xyz",
+            "status": "completed"
+          },
+          "trackingNumber": "TRK12345678",
+          "deliveryDate": "2023-07-18T14:30:00Z"
+        },
+        "transformers": ["response-template"]
+      },
+      "priority": 1
+    },
+    {
+      "name": "Order not found",
+      "request": {
+        "method": "GET",
+        "urlPath": "/api/orders/invalid-id",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        }
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "error": "Order not found"
+        }
+      },
+      "priority": 2
+    },
+    {
+      "name": "Cancel order",
+      "request": {
+        "method": "POST",
+        "urlPathPattern": "/api/orders/[a-zA-Z0-9-]+/cancel",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "id": "${request.pathSegments.[2]}",
+          "status": "cancelled",
+          "cancelledAt": "2023-07-16T10:15:30Z",
+          "refundStatus": "pending"
+        },
+        "transformers": ["response-template"]
+      }
+    },
+    {
+      "name": "Order tracking",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/orders/[a-zA-Z0-9-]+/tracking",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "orderId": "${request.pathSegments.[2]}",
+          "trackingNumber": "TRK12345678",
+          "carrier": "FedEx",
+          "status": "Delivered",
+          "estimatedDelivery": "2023-07-18T00:00:00Z",
+          "actualDelivery": "2023-07-18T14:30:00Z",
+          "events": [
+            {
+              "timestamp": "2023-07-15T10:00:00Z",
+              "description": "Order shipped",
+              "location": "Warehouse A"
+            },
+            {
+              "timestamp": "2023-07-17T08:30:00Z",
+              "description": "Out for delivery",
+              "location": "Local Distribution Center"
+            },
+            {
+              "timestamp": "2023-07-18T14:30:00Z",
+              "description": "Delivered",
+              "location": "Customer Address"
+            }
+          ]
+        },
+        "transformers": ["response-template"]
+      }
+    },
+    {
+      "name": "Request return",
+      "request": {
+        "method": "POST",
+        "urlPathPattern": "/api/orders/[a-zA-Z0-9-]+/return",
+        "headers": {
+          "Authorization": {
+            "matches": "Bearer .*"
+          }
+        },
+        "bodyPatterns": [
+          {
+            "matchesJsonPath": "$.reason"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "returnId": "return-789",
+          "orderId": "${request.pathSegments.[2]}",
+          "status": "pending_approval",
+          "createdAt": "2023-07-20T09:45:12Z",
+          "items": [
+            {
+              "productId": 1,
+              "quantity": 1
+            }
+          ],
+          "reason": "Defective product",
+          "returnLabel": "https://example.com/return-labels/return-789.pdf"
+        },
+        "transformers": ["response-template"]
+      }
+    }
+  ]
+}

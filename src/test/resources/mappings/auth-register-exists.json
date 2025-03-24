@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "POST",
-    "url": "/api/auth/register",
+    "url": "/api/auth/register/exited",
     "bodyPatterns": [
       {
         "matchesJsonPath": "$.email",

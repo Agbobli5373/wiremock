@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "POST",
-    "url": "/api/auth/login",
+    "url": "/api/auth/login/wrong",
     "bodyPatterns": [
       {
         "matchesJsonPath": "$.email",
